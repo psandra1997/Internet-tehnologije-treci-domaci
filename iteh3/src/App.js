@@ -1,8 +1,8 @@
 import './App.css';
 import Menu from './components/Menu';
 import NoviRecept from './components/NoviRecept';
-import Pocetna from './components/Pocetna';
-import Nagrada from './components/Nagrada';
+/*import Pocetna from './components/Pocetna';
+import Nagrada from './components/Nagrada';*/
 import React, { useState } from 'react';
 
 function App() {

@@ -18,7 +18,7 @@ function Menu() {
     return (
         
         <div className="container" >
-            <h1>Šalji recept i pobedi 2021.</h1>
+            <h1 style={{color:"black", textAlign:'center', fontSize:'35px'}}>Pošalji recept i pobedi 2021.</h1>
             <div className="bloc-tabs">
              
             <div className={klik === 1 ? "tabs active-tabs":"tabs"}
@@ -31,11 +31,11 @@ function Menu() {
             <div className="content-tabs">
 
             <div className={klik === 1 ? "content active-content":"content"}>
-            <h2 style={{color:"#b68ae9", textAlign:'center'}}>Nagradna igra!</h2><hr/>
+            <h2 style={{color:"#b68ae9", textAlign:'center', fontSize:'30px'}}>Nagradna igra!</h2><hr/>
             <div className="text1"><br></br>
-                <p>Kuvanje je umetnost, tehnologija, nauka i zanat pripremanja hrane za konzumaciju. Tehnike kuhanja i sastojci uveliko variraju u celom svetu, od pečenja hrane na otvorenom ognju do upotrebe električnih štednjaka, pečenja u različitim vrstama pećnica, odražavajući jedinstvene ekološke, ekonomske i kulturne tradicije i trendove. </p>
-            <br/><p style={{color:"Green"}}>Ukoliko imaš neobičan recept pošalji i osvoji nagradu.</p>
-            <button>Pošalji!</button>
+                <p style={{color:"rgb(17, 99, 92)", textAlign:'center', fontSize:'25px', fontStyle:'italic'}}>Kuvanje je umetnost, tehnologija, nauka i zanat pripremanja hrane za konzumaciju. Tehnike kuhanja i sastojci uveliko variraju u celom svetu, od pečenja hrane na otvorenom ognju do upotrebe električnih štednjaka, pečenja u različitim vrstama pećnica, odražavajući jedinstvene ekološke, ekonomske i kulturne tradicije i trendove. </p>
+            <br/><p style={{color:"Green", fontSize:'25px'}}>Ukoliko imaš neobičan recept pošalji i osvoji nagradu.</p>
+           <br></br><br></br> <button className="dugme1" onClick={()=>klikMenu(2)}>Pošalji!</button>
             </div>
             
             </div>
@@ -50,16 +50,18 @@ function Menu() {
                 }}></NoviRecept>
             </div>
             <div className={klik === 3 ? "content active-content":"content"}>
-            <p>Nagrade:<hr/>
-<p/>Svakog dana 50 knjiga Plazmasticarnica! <img src={slika1}></img>
+            <p style={{fontSize:'20px'}}>Nagrade:<hr/>
+Svakog dana 50 knjiga Plazmasticarnica! <img src={slika1} style={{width:'250px', display:'flex', marginLeft:'200px'}}></img><hr/>
 
-<br></br>Svake nedelje 30 Metalac serpe za kuvanje.<img src={slika2}></img>
-
-Svakog meseca vikend putovanje za dvoje Zlatibor i poseta El Paso City parku.
-<img src={slika3}></img>
+<br></br>Svake nedelje 30 Metalac serpe za kuvanje.<img style={{width:'350px',display:'flex',marginLeft:'200px', borderRadius:'250px'}} src={slika2}></img>
+<hr/>Svakog meseca vikend putovanje za dvoje Zlatibor i poseta El Paso City parku.
+<img style={{width:'350px', borderRadius:'250px',display:'flex',marginLeft:'200px'}} src={slika3}></img>
 </p>
+       </div>
+       </div>
        
-       </div></div></div>
+       
+       </div>
              
        
     )
