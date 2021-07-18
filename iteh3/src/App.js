@@ -1,9 +1,6 @@
 import './App.css';
 import Menu from './components/Menu';
-import NoviRecept from './components/NoviRecept';
-/*import Pocetna from './components/Pocetna';
-import Nagrada from './components/Nagrada';*/
-import React, { useState } from 'react';
+import ReceptLista from './components/ReceptLista';
 
 function App() {
   
@@ -12,17 +9,20 @@ function App() {
 
 <Menu></Menu>
 
+
       <header className="App-header">
+      
         <div className="content">
         
           
- 
+        
          
         </div>
         
       </header>
+      
       <body>
-
+      
 
       </body>
     </div>
